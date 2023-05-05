@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks/useAuth';
 import css from './Navigation.module.css';
-import { Button, ButtonGroup } from '@chakra-ui/react';
+
 import { ImBook } from 'react-icons/im';
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();

@@ -1,4 +1,3 @@
-import css from './ContactList.module.css';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   selectContacts,
