@@ -1,4 +1,5 @@
 import { useEffect, lazy } from 'react';
+
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout';
@@ -21,7 +22,7 @@ export const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <b>Refreshing contacts...</b>
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -41,6 +42,7 @@ export const App = () => {
             <RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
           }
         />
+
         <Route
           path="/contacts"
           element={
