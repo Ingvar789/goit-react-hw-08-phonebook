@@ -23,27 +23,24 @@ export const RegisterForm = () => {
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
         Username
-        <Input type="text" name="name" borderColor="DarkViolet" opacity={0.5} />
+        <Input type="text" name="name" borderColor="black" opacity={0.5} />
       </label>
       <label className={css.label}>
         Email
-        <Input
-          type="email"
-          name="email"
-          borderColor="DarkViolet"
-          opacity={0.5}
-        />
+        <Input type="email" name="email" borderColor="black" opacity={0.5} />
       </label>
       <label className={css.label}>
         Password
         <Input
           type="password"
           name="password"
-          borderColor="DarkViolet"
+          borderColor="black"
           opacity={0.5}
         />
       </label>
-      <Button type="submit">Sign up</Button>
+      <Button type="submit" colorScheme="blackAlpha">
+        Sign up
+      </Button>
     </form>
   );
 };

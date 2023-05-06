@@ -6,6 +6,7 @@ import {
 import { deleteContact } from 'redux/contacts/contactsOperations';
 import { List, ListItem, ListIcon, Button } from '@chakra-ui/react';
 import { ImUser } from 'react-icons/im';
+
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
   const filter = useSelector(selectStatusFilter);
@@ -42,11 +43,15 @@ export const ContactList = () => {
                 alignItems: 'center',
               }}
             >
-              <ListIcon as={ImUser} color="purple.500" />
+              <ListIcon as={ImUser} color="black" />
               {name}: {number}
             </div>
 
-            <Button type="button" onClick={() => onDeleteContact(id)}>
+            <Button
+              type="button"
+              colorScheme="blackAlpha"
+              onClick={() => onDeleteContact(id)}
+            >
               Delete
             </Button>
           </ListItem>

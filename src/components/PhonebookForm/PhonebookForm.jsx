@@ -45,7 +45,7 @@ export const PhonebookForm = () => {
         p="20px"
         color="white"
         mt="4"
-        bg="purple.500"
+        border="1px solid black"
         rounded="md"
         shadow="md"
       >
@@ -56,12 +56,13 @@ export const PhonebookForm = () => {
               <InputGroup>
                 <InputLeftElement
                   pointerEvents="none"
-                  children={<ImUserPlus color="gray.300" />}
+                  children={<ImUserPlus color="black" />}
                 />
                 <Input
+                  colorScheme="black"
                   placeholder="Harry Potter"
                   _placeholder={{ opacity: 1, color: 'black.900' }}
-                  focusBorderColor="white"
+                  focusBorderColor="black"
                   size="md"
                   type="text"
                   name="name"
@@ -81,12 +82,12 @@ export const PhonebookForm = () => {
               <InputGroup>
                 <InputLeftElement
                   pointerEvents="none"
-                  children={<ImPhone color="gray.300" />}
+                  children={<ImPhone color="black" />}
                 />
 
                 <Input
                   colorScheme="black"
-                  focusBorderColor="white"
+                  focusBorderColor="black"
                   placeholder="123-789"
                   _placeholder={{ opacity: 1, color: 'black.900' }}
                   size="md"
@@ -102,7 +103,7 @@ export const PhonebookForm = () => {
               </InputGroup>
             </Stack>
           </label>
-          <Button type="submit" colorScheme="purple">
+          <Button type="submit" colorScheme="blackAlpha">
             Add contact
           </Button>
         </form>

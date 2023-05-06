@@ -5,6 +5,7 @@
 }
 .phonebookFormLabel {
   display: flex;
+  color: black;
   align-items: center;
   gap: 10px;
   padding: 0;

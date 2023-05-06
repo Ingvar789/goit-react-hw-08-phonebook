@@ -22,23 +22,20 @@ export const LoginForm = () => {
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
         Email
-        <Input
-          type="email"
-          name="email"
-          borderColor="DarkViolet"
-          opacity={0.5}
-        />
+        <Input type="email" name="email" borderColor="black" opacity={0.5} />
       </label>
       <label className={css.label}>
         Password
         <Input
           type="password"
           name="password"
-          borderColor="DarkViolet"
+          borderColor="black"
           opacity={0.5}
         />
       </label>
-      <Button type="submit">Sign in</Button>
+      <Button type="submit" colorScheme="blackAlpha">
+        Sign in
+      </Button>
     </form>
   );
 };

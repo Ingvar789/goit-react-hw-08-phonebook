@@ -1,14 +1,13 @@
 const styles = {
   container: {
-    minHeight: 'calc(100vh - 100px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'plum',
+    marginTop: 'calc(100vh/3)',
   },
   title: {
-    fontWeight: 500,
-    fontSize: 48,
+    fontWeight: 700,
+    fontSize: 52,
     textAlign: 'center',
   },
 };
@@ -16,15 +15,7 @@ const styles = {
 export default function Home() {
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>
-        Your personal Phonebook
-        <span role="img" aria-label="Phone icon">
-          <svg>
-            {' '}
-            <use href="/icons/phone.svg"></use>
-          </svg>
-        </span>
-      </h1>
+      <h1 style={styles.title}>Your personal Phonebook</h1>
     </div>
   );
 }

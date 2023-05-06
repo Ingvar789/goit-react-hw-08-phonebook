@@ -15,7 +15,7 @@ export const Filter = () => {
     <label className={css.filterLabel}>
       Find contacts by name
       <Input
-        focusBorderColor="DarkViolet"
+        focusBorderColor="black"
         type="text"
         name="filter"
         className="filterInput"
