@@ -34,7 +34,7 @@ export const ContactList = () => {
             p={1}
             justifyContent="space-between"
             alignItems="center"
-            border="1px solid gray"
+            border="1px solid white"
             borderRadius={10}
           >
             <div

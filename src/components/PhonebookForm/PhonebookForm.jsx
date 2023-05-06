@@ -45,7 +45,7 @@ export const PhonebookForm = () => {
         p="20px"
         color="white"
         mt="4"
-        border="1px solid black"
+        border="1px solid white"
         rounded="md"
         shadow="md"
       >
@@ -61,7 +61,7 @@ export const PhonebookForm = () => {
                 <Input
                   colorScheme="black"
                   placeholder="Harry Potter"
-                  _placeholder={{ opacity: 1, color: 'black.900' }}
+                  _placeholder={{ opacity: 0.9, color: 'black' }}
                   focusBorderColor="black"
                   size="md"
                   type="text"
@@ -89,7 +89,7 @@ export const PhonebookForm = () => {
                   colorScheme="black"
                   focusBorderColor="black"
                   placeholder="123-789"
-                  _placeholder={{ opacity: 1, color: 'black.900' }}
+                  _placeholder={{ opacity: 0.9, color: 'black' }}
                   size="md"
                   type="tel"
                   name="number"
